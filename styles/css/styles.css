@@ -1,3 +1,114 @@
+/* * BASE LAYOUT
+ * */
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2d2640;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+}
+
+.inner-wrap {
+  max-width: 1160px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0 auto;
+}
+
+.logo svg path {
+  fill: #2d2640;
+}
+
+button {
+  padding: 12px 25px;
+  border-radius: 0;
+  border: 2px solid #2d2640;
+  background: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #2d2640;
+}
+
+button.btn-reverse {
+  border-color: white;
+  color: white;
+}
+
+.site-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.site-header .inner-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+}
+
+.header-nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* * RESPONSIVE CHANGES
+ * */
+@media screen and (min-width: 700px) {
+  .site-header {
+    padding: 20px 0;
+  }
+
+  nav ul {
+    font-size: 0.8em;
+  }
+
+  .header-nav {
+    display: flex;
+  }
+
+  .header-nav-toggle {
+    display: none;
+  }
+
+  .header-nav ul {
+    font-size: 0.9em;
+  }
+
+  .header-nav ul li + li {
+    margin-left: 30px;
+  }
+
+  .header-nav ul li a {
+    color: #2d2640;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
