@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.6em;
+  font-size: 2.8em;
   line-height: 1;
   margin-bottom: 0;
 }
@@ -102,12 +102,12 @@ button.btn-smaller {
 }
 
 .hero-section .hero-img {
-  background: url("../../assets/image-intro-mobile.jpg") no-repeat;
-  background-position: center;
-  background-size: cover;
   width: calc(100% + 40px);
-  height: 450px;
   margin-left: -20px;
+}
+
+.hero-section .hero-img img {
+  width: 100%;
 }
 
 .hero-section .text {
@@ -118,18 +118,19 @@ button.btn-smaller {
   position: relative;
 }
 
-.hero-img::before {
+.hero-section .text::before {
   background: url("../../assets/bg-pattern-intro-left-mobile.svg") no-repeat;
-  background-position: center left;
+  background-position: top left;
   background-size: contain;
   content: "";
   height: 170px;
   width: 50%;
   position: absolute;
-  top: 450px;
+  top: -104px;
+  left: -20px;
 }
 
-.hero-img::after {
+.hero-section .text::after {
   background: url("../../assets/bg-pattern-intro-right-mobile.svg") no-repeat;
   background-position: center right;
   background-size: contain;
@@ -137,8 +138,7 @@ button.btn-smaller {
   height: 330px;
   width: 50%;
   position: absolute;
-  top: calc(450px + 35%);
-  right: 0;
+  right: -20px;
 }
 
 /* * RESPONSIVE CHANGES
@@ -170,10 +170,6 @@ button.btn-smaller {
 
   .header-nav ul li a {
     color: #2d2640;
-  }
-
-  .hero-section .hero-img {
-    background: url("../../assets/image-intro-desktop.jpg") no-repeat;
   }
 }
 
