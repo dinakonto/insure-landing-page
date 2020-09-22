@@ -25,14 +25,24 @@ h1 {
   margin-bottom: 30px;
 }
 
+h2 {
+  font-size: 2.8em;
+  line-height: 3;
+}
+
+h3 {
+  font-size: 1.7em;
+  margin-bottom: 10px;
+}
+
 p {
   line-height: 1.65;
 }
 
 .inner-wrap {
   max-width: 1110px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
   margin: 0 auto;
 }
 
@@ -102,7 +112,7 @@ button.btn-smaller {
 
 .hero-section .hero-img {
   width: calc(100% + 40px);
-  margin-left: -20px;
+  margin-left: -25px;
   max-height: 450px;
   overflow: hidden;
   display: flex;
@@ -148,6 +158,32 @@ button.btn-smaller {
   position: absolute;
   right: 0;
   top: calc(450px + 340px);
+}
+
+.three-col-section {
+  background: white;
+  position: relative;
+  padding-top: 100px;
+}
+
+.three-col-section .text {
+  text-align: center;
+}
+
+.three-col-section .text p {
+  color: #837d87;
+}
+
+.three-col-section .feature {
+  margin-bottom: 60px;
+}
+
+.three-col-section h2::before {
+  content: "";
+  width: 150px;
+  position: absolute;
+  border-top: 1px solid #837d87;
+  margin-left: 70px;
 }
 
 /* * RESPONSIVE CHANGES

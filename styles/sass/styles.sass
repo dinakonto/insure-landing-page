@@ -12,7 +12,7 @@ $font-weight-regular: 400
 $font-weight-bold: 700
 $font-base-size: 16px
 
-$pg-margin: 20px
+$pg-margin: 25px
 
 /*
  * BASE LAYOUT
@@ -34,6 +34,12 @@ h1
   font-size: 2.8em
   line-height: 1
   margin-bottom: 30px
+h2
+  font-size: 2.8em
+  line-height: 3
+h3
+  font-size: 1.7em
+  margin-bottom: 10px
 p
   line-height: 1.65
 
@@ -128,6 +134,27 @@ button.btn-smaller
   position: absolute
   right: 0
   top: calc(450px + 340px)
+
+// THREE-COLUMN SECTION
+.three-col-section
+  background: white
+  position: relative
+  padding-top: 100px
+.three-col-section .text
+  text-align: center
+.three-col-section .text p
+  color: $col-neutral-medium
+.three-col-section .feature
+  margin-bottom: 60px
+.three-col-section h2::before
+  content: ""
+  width: 150px
+  position: absolute
+  border-top: 1px solid $col-neutral-medium
+  margin-left: 70px
+
+
+
 
 
 
