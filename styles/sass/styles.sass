@@ -28,10 +28,17 @@ body
 h1, h2, h3, h4, h5, h6
   font-family: $font-stack-heading
   font-weight: $font-weight-heading
+h1
+  font-size: 2.6em
+  line-height: 1
+  margin-bottom: 0
+p
+  line-height: 1.7
+
 .inner-wrap
   max-width: 1160px
-  padding-left: 25px
-  padding-right: 25px
+  padding-left: 20px
+  padding-right: 20px
   margin: 0 auto
 .logo svg path
   fill: $col-primary-dark
@@ -45,9 +52,14 @@ button
   font-weight: $font-weight-bold
   letter-spacing: 2px
   color: $col-primary-dark
+  margin-top: 20px
 button.btn-reverse
   border-color: white
   color: white
+button.btn-smaller
+  padding: 10px 20px
+  font-size: 0.7em
+  font-weight: $font-weight-regular
 
 // HEADER
 .site-header
@@ -73,6 +85,53 @@ button.btn-reverse
   text-decoration: none
   color: white
 
+// HERO SECTION
+.hero-section
+  background: $col-primary-dark
+  position: relative
+.hero-section .hero-img
+  background: url("../../assets/image-intro-mobile.jpg") no-repeat
+  background-position: center
+  background-size: cover
+  width: calc(100% + 40px)
+  height: 450px
+  margin-left: -20px
+.hero-section .text
+  color: white
+  text-align: center
+  margin-top: 100px
+  padding-bottom: 100px
+  position: relative
+.hero-img::before
+  background: url("../../assets/bg-pattern-intro-left-mobile.svg") no-repeat
+  background-position: center left
+  background-size: contain
+  content: ""
+  height: 170px
+  width: 50%
+  position: absolute
+  top: 450px
+.hero-img::after
+  background: url("../../assets/bg-pattern-intro-right-mobile.svg") no-repeat
+  background-position: center right
+  background-size: contain
+  content: ""
+  height: 330px
+  width: 50%
+  position: absolute
+  top: calc(450px + 35%)
+  right: 0
+
+
+
+
+
+
+
+
+
+
+
 
 /*
  * RESPONSIVE CHANGES
@@ -93,3 +152,12 @@ button.btn-reverse
     margin-left: 30px
   .header-nav ul li a
     color: $col-primary-dark
+
+  // HERO SECTION
+  .hero-section .hero-img
+    background: url("../../assets/image-intro-desktop.jpg") no-repeat
+    // background-position: center
+    // background-size: cover
+    // width: calc(100% + 50px)
+    // height: 450px
+    // margin-left: -25px

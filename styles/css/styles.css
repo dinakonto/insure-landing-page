@@ -19,10 +19,20 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+h1 {
+  font-size: 2.6em;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+p {
+  line-height: 1.7;
+}
+
 .inner-wrap {
   max-width: 1160px;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -40,11 +50,18 @@ button {
   font-weight: 700;
   letter-spacing: 2px;
   color: #2d2640;
+  margin-top: 20px;
 }
 
 button.btn-reverse {
   border-color: white;
   color: white;
+}
+
+button.btn-smaller {
+  padding: 10px 20px;
+  font-size: 0.7em;
+  font-weight: 400;
 }
 
 .site-header {
@@ -79,6 +96,51 @@ button.btn-reverse {
   color: white;
 }
 
+.hero-section {
+  background: #2d2640;
+  position: relative;
+}
+
+.hero-section .hero-img {
+  background: url("../../assets/image-intro-mobile.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: calc(100% + 40px);
+  height: 450px;
+  margin-left: -20px;
+}
+
+.hero-section .text {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+.hero-img::before {
+  background: url("../../assets/bg-pattern-intro-left-mobile.svg") no-repeat;
+  background-position: center left;
+  background-size: contain;
+  content: "";
+  height: 170px;
+  width: 50%;
+  position: absolute;
+  top: 450px;
+}
+
+.hero-img::after {
+  background: url("../../assets/bg-pattern-intro-right-mobile.svg") no-repeat;
+  background-position: center right;
+  background-size: contain;
+  content: "";
+  height: 330px;
+  width: 50%;
+  position: absolute;
+  top: calc(450px + 35%);
+  right: 0;
+}
+
 /* * RESPONSIVE CHANGES
  * */
 @media screen and (min-width: 700px) {
@@ -108,6 +170,10 @@ button.btn-reverse {
 
   .header-nav ul li a {
     color: #2d2640;
+  }
+
+  .hero-section .hero-img {
+    background: url("../../assets/image-intro-desktop.jpg") no-repeat;
   }
 }
 
