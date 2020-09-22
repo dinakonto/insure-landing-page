@@ -22,15 +22,15 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 2.8em;
   line-height: 1;
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 p {
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 .inner-wrap {
-  max-width: 1160px;
+  max-width: 1110px;
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
@@ -41,7 +41,7 @@ p {
 }
 
 button {
-  padding: 12px 25px;
+  padding: 11px 25px;
   border-radius: 0;
   border: 2px solid #2d2640;
   background: none;
@@ -50,7 +50,6 @@ button {
   font-weight: 700;
   letter-spacing: 2px;
   color: #2d2640;
-  margin-top: 20px;
 }
 
 button.btn-reverse {
@@ -59,7 +58,7 @@ button.btn-reverse {
 }
 
 button.btn-smaller {
-  padding: 10px 20px;
+  padding: 12px 20px;
   font-size: 0.7em;
   font-weight: 400;
 }
@@ -124,7 +123,11 @@ button.btn-smaller {
   position: relative;
 }
 
-.hero-section .text::before {
+.hero-section .text button {
+  margin-top: 12px;
+}
+
+.hero-section .hero-img::before {
   background: url("../../assets/bg-pattern-intro-left-mobile.svg") no-repeat;
   background-position: top left;
   background-size: contain;
@@ -132,11 +135,10 @@ button.btn-smaller {
   height: 170px;
   width: 50%;
   position: absolute;
-  top: -100px;
-  left: -20px;
+  top: 450px;
 }
 
-.hero-section .text::after {
+.hero-section .hero-img::after {
   background: url("../../assets/bg-pattern-intro-right-mobile.svg") no-repeat;
   background-position: center right;
   background-size: contain;
@@ -144,7 +146,8 @@ button.btn-smaller {
   height: 330px;
   width: 50%;
   position: absolute;
-  right: -20px;
+  right: 0;
+  top: calc(450px + 340px);
 }
 
 /* * RESPONSIVE CHANGES
@@ -167,7 +170,7 @@ button.btn-smaller {
   }
 
   .header-nav ul {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
 
   .header-nav ul li + li {
@@ -176,6 +179,93 @@ button.btn-smaller {
 
   .header-nav ul li a {
     color: #2d2640;
+  }
+
+  .hero-section {
+    padding-top: 30px;
+  }
+
+  .hero-section .hero-img {
+    float: right;
+    width: 50%;
+    max-height: none;
+    padding-top: 20px;
+    max-width: 500px;
+  }
+
+  .hero-section .text {
+    width: 50%;
+    padding-right: 20px;
+    text-align: left;
+    margin-top: 0;
+    padding-bottom: 50px;
+    padding-top: 24px;
+  }
+
+  .hero-section .text::before {
+    content: "";
+    width: 150px;
+    position: absolute;
+    border-top: 1px solid white;
+  }
+
+  .hero-section .hero-img::before {
+    background: url("../../assets/bg-pattern-intro-left-desktop.svg") no-repeat;
+    background-size: contain;
+    background-position: left top;
+    height: 300px;
+    top: 330px;
+    left: 0;
+  }
+
+  .hero-section .hero-img::after {
+    background: url("../../assets/bg-pattern-intro-right-desktop.svg") no-repeat;
+    background-size: contain;
+    background-position: right top;
+    height: 300px;
+    top: 0;
+  }
+}
+@media screen and (min-width: 800px) {
+  .hero-section {
+    padding-top: 50px;
+  }
+
+  .hero-section .text {
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .hero-section {
+    padding-top: 85px;
+  }
+
+  .hero-section .text {
+    padding-bottom: 125px;
+  }
+
+  h1 {
+    font-size: 3.5em;
+    line-height: 0.9;
+  }
+
+  .hero-section .hero-img::before {
+    top: 470px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  h1 {
+    font-size: 4.5em;
+    line-height: 0.9;
+  }
+
+  .hero-section .hero-img::before {
+    top: 430px;
+    height: 515px;
+  }
+
+  .hero-section .hero-img::after {
+    height: 515px;
   }
 }
 
