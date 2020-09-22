@@ -104,9 +104,15 @@ button.btn-smaller {
 .hero-section .hero-img {
   width: calc(100% + 40px);
   margin-left: -20px;
+  max-height: 450px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
 
-.hero-section .hero-img img {
+.hero-section .hero-img picture,
+.hero-section .hero-img picture img {
   width: 100%;
 }
 
@@ -126,7 +132,7 @@ button.btn-smaller {
   height: 170px;
   width: 50%;
   position: absolute;
-  top: -104px;
+  top: -100px;
   left: -20px;
 }
 
