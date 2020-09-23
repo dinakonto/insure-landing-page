@@ -187,6 +187,21 @@ button.btn-smaller {
   color: #837d87;
 }
 
+.banner-section {
+  background: url("../../assets/bg-pattern-how-we-work-mobile.svg") no-repeat #2d2640;
+  background-size: contain;
+  background-position: right top;
+  color: white;
+  padding: 45px 30px 70px 30px;
+  text-align: center;
+  margin: 24px;
+}
+
+.banner-section h2 {
+  font-size: 2.4em;
+  line-height: 1;
+}
+
 /* * RESPONSIVE CHANGES
  * */
 @media screen and (min-width: 700px) {
