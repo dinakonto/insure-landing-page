@@ -139,6 +139,7 @@ button.btn-smaller
 // THREE-COLUMN SECTION
 .three-col-section .inner-wrap
   padding-top: 140px
+  padding-bottom: 130px
   text-align: center
 .three-col-section h2::before
   border-top: 1px solid $col-neutral-medium
@@ -162,7 +163,7 @@ button.btn-smaller
   color: white
   padding: 45px 30px 70px 30px
   text-align: center
-  margin: 24px
+  margin: 0 24px
 .banner-section h2
   font-size: 2.4em
   line-height: 1
@@ -234,7 +235,17 @@ button.btn-smaller
     left: 0
   .three-col-section .feature
     max-width: none
-
+  // BANNER SECTION
+  .banner-section
+    background: url("../../assets/bg-pattern-how-we-work-desktop.svg") no-repeat $col-primary-dark
+    background-size: contain
+    background-position: right top
+    padding: 10px 50px
+    text-align: left
+    margin: 24px
+    display: flex
+    align-items: center
+    justify-content: space-between
 
 
 
@@ -259,6 +270,12 @@ button.btn-smaller
     font-size: 3.5em
   .hero-section .hero-img::before
     top: 470px
+  // BANNER SECTION
+  .banner-section
+    padding: 24px 80px
+  .banner-section h2
+    font-size: 3.5em
+    line-height: 1
 
 
 @media screen and (min-width: 1100px)
@@ -274,6 +291,6 @@ button.btn-smaller
   .hero-section .hero-img::after
     height: 515px
   .three-col-section .inner-wrap
-    padding-top: 260px
-    padding-left: 0
-    padding-right: 0
+    padding: 260px 0 143px 0
+  .banner-section
+    margin: 0 auto
