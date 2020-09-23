@@ -37,7 +37,7 @@ h1
   margin-bottom: 30px
 h2
   position: relative
-  margin-bottom: 70px
+  margin-bottom: 40px
 h3
   font-size: 1.8em
   margin-bottom: 10px
@@ -148,7 +148,9 @@ button.btn-smaller
   top: -45px
   left: calc(50% - 75px)
 .three-col-section .feature
-  margin-top: 60px
+  padding-top: 40px
+  max-width: 400px
+  margin: 0 auto
 .three-col-section .feature p
   color: $col-neutral-medium
 
@@ -209,6 +211,21 @@ button.btn-smaller
     background-position: right top
     height: 300px
     top: 0
+  // THREE-COLUMN SECTION
+  .three-col
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 20px
+  .three-col-section .inner-wrap
+    text-align: left
+  .three-col-section h2::before
+    left: 0
+  .three-col-section .feature
+    max-width: none
+
+
+
+
 
 @media screen and (min-width: 800px)
   // HERO SECTION
@@ -226,6 +243,8 @@ button.btn-smaller
   h1
     font-size: 3.5em
     line-height: 0.9
+  .three-col-section h2
+    font-size: 3.5em
   .hero-section .hero-img::before
     top: 470px
 
@@ -235,8 +254,14 @@ button.btn-smaller
   h1
     font-size: 4.5em
     line-height: 0.9
+  .three-col-section h2
+    font-size: 4.5em
   .hero-section .hero-img::before
     top: 430px
     height: 515px
   .hero-section .hero-img::after
     height: 515px
+  .three-col-section .inner-wrap
+    padding-top: 260px
+    padding-left: 0
+    padding-right: 0

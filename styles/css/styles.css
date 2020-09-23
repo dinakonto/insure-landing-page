@@ -30,7 +30,7 @@ h1 {
 
 h2 {
   position: relative;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 h3 {
@@ -178,7 +178,9 @@ button.btn-smaller {
 }
 
 .three-col-section .feature {
-  margin-top: 60px;
+  padding-top: 40px;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .three-col-section .feature p {
@@ -260,6 +262,24 @@ button.btn-smaller {
     height: 300px;
     top: 0;
   }
+
+  .three-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .three-col-section .inner-wrap {
+    text-align: left;
+  }
+
+  .three-col-section h2::before {
+    left: 0;
+  }
+
+  .three-col-section .feature {
+    max-width: none;
+  }
 }
 @media screen and (min-width: 800px) {
   .hero-section {
@@ -284,6 +304,10 @@ button.btn-smaller {
     line-height: 0.9;
   }
 
+  .three-col-section h2 {
+    font-size: 3.5em;
+  }
+
   .hero-section .hero-img::before {
     top: 470px;
   }
@@ -294,6 +318,10 @@ button.btn-smaller {
     line-height: 0.9;
   }
 
+  .three-col-section h2 {
+    font-size: 4.5em;
+  }
+
   .hero-section .hero-img::before {
     top: 430px;
     height: 515px;
@@ -301,6 +329,12 @@ button.btn-smaller {
 
   .hero-section .hero-img::after {
     height: 515px;
+  }
+
+  .three-col-section .inner-wrap {
+    padding-top: 260px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
