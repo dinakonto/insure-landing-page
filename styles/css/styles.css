@@ -351,11 +351,37 @@ button.btn-smaller {
     background-size: contain;
     background-position: right top;
     padding: 10px 50px;
+    margin-bottom: 150px;
     text-align: left;
-    margin: 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .site-footer {
+    background: url("../../assets/bg-pattern-footer-desktop.svg") no-repeat #fafafa;
+    background-size: 530px;
+    padding: 65px 0 50px 0;
+    text-align: left;
+  }
+
+  .footer-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .site-footer ul.social-links {
+    margin-top: 0;
+  }
+
+  .site-footer .four-col-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .site-footer h4 {
+    margin: 45px 0 35px 0;
   }
 }
 @media screen and (min-width: 800px) {
@@ -422,7 +448,8 @@ button.btn-smaller {
   }
 
   .banner-section {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

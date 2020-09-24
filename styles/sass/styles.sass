@@ -176,7 +176,6 @@ button.btn-smaller
   padding: 90px 0 70px 0
   text-align: center
   text-transform: uppercase
-
 .footer-head
   border-bottom: 1px solid #d2d2d2
 .site-footer ul
@@ -282,11 +281,28 @@ button.btn-smaller
     background-size: contain
     background-position: right top
     padding: 10px 50px
+    margin-bottom: 150px
     text-align: left
-    margin: 24px
     display: flex
     align-items: center
     justify-content: space-between
+  // FOOTER
+  .site-footer
+    background: url("../../assets/bg-pattern-footer-desktop.svg") no-repeat $col-neutral-light
+    background-size: 530px
+    padding: 65px 0 50px 0
+    text-align: left
+  .footer-head
+    display: flex
+    align-items: center
+    justify-content: space-between
+  .site-footer ul.social-links
+    margin-top: 0
+  .site-footer .four-col-section
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+  .site-footer h4
+    margin: 45px 0 35px 0
 
 
 
@@ -334,4 +350,5 @@ button.btn-smaller
   .three-col-section .inner-wrap
     padding: 260px 0 143px 0
   .banner-section
-    margin: 0 auto
+    margin-left: auto
+    margin-right: auto
