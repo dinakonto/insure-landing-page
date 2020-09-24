@@ -19,6 +19,7 @@ $pg-margin: 20px
  */
 *
   box-sizing: border-box
+  transition: background 0.2s ease-in-out
 body
   margin: 0
   height: 100%
@@ -61,13 +62,19 @@ button
   font-weight: $font-weight-bold
   letter-spacing: 2px
   color: $col-primary-dark
+button:hover
+  color: white
+  background: $col-primary-dark
+  cursor: pointer
 button.btn-reverse
   border-color: white
   color: white
+button.btn-reverse:hover
+  color: $col-primary-dark
+  background: white
 button.btn-smaller
   padding: 12px 20px
   font-size: 0.7em
-  font-weight: $font-weight-regular
 
 // HEADER
 .site-header
@@ -88,6 +95,7 @@ button.btn-smaller
   list-style-type: none
   text-transform: uppercase
   letter-spacing: 2px
+  font-weight: bold
   font-size: 1.2em
 .header-nav ul li a
   text-decoration: none
@@ -188,6 +196,9 @@ button.btn-smaller
   margin: 30px 0
 .site-footer ul.social-links li:not(:last-child)
   margin-right: 15px
+.site-footer ul.social-links li a svg path:hover
+  cursor: pointer
+  fill: $col-primary-dark
 .site-footer h4
   font-size: 0.85em
   font-family: $font-stack-body
@@ -202,6 +213,8 @@ button.btn-smaller
   color: $col-primary-dark
   font-weight: $font-weight-bold
   font-size: 0.9em
+.site-footer .four-col-section li a:hover
+  text-decoration: underline
 
 
 
@@ -229,6 +242,8 @@ button.btn-smaller
   .header-nav ul li + li
     margin-left: 30px
   .header-nav ul li a
+    color: $col-neutral-medium
+  .header-nav ul li a:hover
     color: $col-primary-dark
   // HERO SECTION
   .hero-section

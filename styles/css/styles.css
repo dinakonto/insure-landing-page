@@ -2,6 +2,7 @@
  * */
 * {
   box-sizing: border-box;
+  transition: background 0.2s ease-in-out;
 }
 
 body {
@@ -65,15 +66,25 @@ button {
   color: #2d2640;
 }
 
+button:hover {
+  color: white;
+  background: #2d2640;
+  cursor: pointer;
+}
+
 button.btn-reverse {
   border-color: white;
   color: white;
 }
 
+button.btn-reverse:hover {
+  color: #2d2640;
+  background: white;
+}
+
 button.btn-smaller {
   padding: 12px 20px;
   font-size: 0.7em;
-  font-weight: 400;
 }
 
 .site-header {
@@ -100,6 +111,7 @@ button.btn-smaller {
   list-style-type: none;
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: bold;
   font-size: 1.2em;
 }
 
@@ -232,6 +244,11 @@ button.btn-smaller {
   margin-right: 15px;
 }
 
+.site-footer ul.social-links li a svg path:hover {
+  cursor: pointer;
+  fill: #2d2640;
+}
+
 .site-footer h4 {
   font-size: 0.85em;
   font-family: "Karla", sans-serif;
@@ -250,6 +267,10 @@ button.btn-smaller {
   color: #2d2640;
   font-weight: 700;
   font-size: 0.9em;
+}
+
+.site-footer .four-col-section li a:hover {
+  text-decoration: underline;
 }
 
 /* * RESPONSIVE CHANGES
@@ -280,6 +301,10 @@ button.btn-smaller {
   }
 
   .header-nav ul li a {
+    color: #837d87;
+  }
+
+  .header-nav ul li a:hover {
     color: #2d2640;
   }
 
