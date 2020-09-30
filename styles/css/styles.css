@@ -319,20 +319,67 @@ main {
     font-size: 0.8em;
   }
 
-  .header-nav ul {
+  .header-nav {
+    display: flex;
+  }
+
+  .header-nav-toggle {
+    display: none;
+  }
+
+  main {
+    margin-top: 75px;
+  }
+
+  .logo {
+    margin: 7px 0;
+  }
+
+  #top-nav {
+    position: relative;
+    top: 0;
+    background: none;
+    width: auto;
+    margin-left: 0;
+    height: auto;
+    text-align: center;
+  }
+
+  #top-nav ul {
+    display: flex;
+    align-items: center;
     font-size: 0.8em;
+    letter-spacing: 2px;
+    margin: 0;
+    font-weight: 700;
   }
 
-  .header-nav ul li + li {
-    margin-left: 30px;
+  #top-nav ul li {
+    padding: 0;
+    margin-left: 28px;
   }
 
-  .header-nav ul li a {
+  #top-nav a {
     color: #837d87;
   }
 
-  .header-nav ul li a:hover {
+  #top-nav a:hover {
     color: #2d2640;
+  }
+
+  #top-nav button {
+    color: #2d2640;
+    border-color: #2d2640;
+    width: auto;
+    margin: 0;
+    padding: 12px 26px;
+    font-size: 0.9em;
+    font-weight: 700;
+  }
+
+  #top-nav button:hover {
+    background: #2d2640;
+    color: white;
   }
 
   .hero-section {

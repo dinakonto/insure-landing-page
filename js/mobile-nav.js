@@ -4,13 +4,12 @@ function mobileNav() {
   $("footer").toggleClass("hide");
   if($("#top-nav").hasClass("hide")) {
     $(".icon-menu").attr("src", "./assets/icon-hamburger.svg");
+    $(".header-nav-toggle").attr("aria-label", "Show menu");
   } else {
     $(".icon-menu").attr("src", "./assets/icon-close.svg");
+    $(".header-nav-toggle").attr("aria-label", "Hide menu");
   }
 }
-
-
-window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 86 || document.documentElement.scrollTop > 86) {
@@ -19,3 +18,5 @@ function scrollFunction() {
     $(".site-header").removeClass("thin-nav")
   }
 }
+
+window.onscroll = function() {scrollFunction()};

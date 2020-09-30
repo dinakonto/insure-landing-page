@@ -92,7 +92,6 @@ button.btn-smaller
   align-items: center
 #top-nav
   position: absolute
-  // top: 0
   top: 86px
   background: url("../../assets/bg-pattern-mobile-nav.svg") no-repeat, $col-neutral-dark
   background-position: left bottom
@@ -297,18 +296,55 @@ main
     padding: 20px 0
   nav ul
     font-size: 0.8em
-  // .header-nav
-  //   display: flex
-  // .header-nav-toggle
-  //   display: none
-  .header-nav ul
+  .header-nav
+    display: flex
+  .header-nav-toggle
+    display: none
+  main
+    margin-top: 75px
+  .logo
+    margin: 7px 0
+  #top-nav
+    position: relative
+    top: 0
+    background: none
+    width: auto
+    margin-left: 0
+    height: auto
+    text-align: center
+  #top-nav ul
+    display: flex
+    align-items: center
     font-size: 0.8em
-  .header-nav ul li + li
-    margin-left: 30px
-  .header-nav ul li a
+    letter-spacing: 2px
+    margin: 0
+    font-weight: $font-weight-bold
+  #top-nav ul li
+    padding: 0
+    margin-left: 28px
+  #top-nav a
     color: $col-neutral-medium
-  .header-nav ul li a:hover
+  #top-nav a:hover
     color: $col-primary-dark
+  #top-nav button
+    color: $col-primary-dark
+    border-color: $col-primary-dark
+    width: auto
+    margin: 0
+    padding: 12px 26px
+    font-size: 0.9em
+    font-weight: $font-weight-bold
+  #top-nav button:hover
+    background: $col-primary-dark
+    color: white
+
+
+
+
+
+
+
+
   // HERO SECTION
   .hero-section
     padding-top: 30px
